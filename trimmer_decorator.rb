@@ -1,19 +1,8 @@
 require_relative 'decorator'
 
-clas TrimDecorator < Decorator
-    def initialize(nameable)
-        super()
-        @nameable = nameable
-    end
-
-    def correct_name
-        super.length > 10 ? super[0..9] : super
-    end
+class TrimDecorator < Decorator
+  def correct_name
+    name = @nameable.correct_name
+    name.length > 10 ? name[0..9] : name
+  end
 end
-
-person = Person.new(22, 'maximilianus')
-  person.correct_name # => "maximilianus"
-  capitalizedPerson = CapitalizeDecorator.new(person)
-  capitalizedPerson.correct_name # => "Maximilianus"
-  capitalizedTrimmedPerson = TrimmerDecorator.new(capitalizedPerson)
-  capitalizedTrimmedPerson.correct_name # => "Maximilian"
