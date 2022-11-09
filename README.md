@@ -1,6 +1,6 @@
 ## School library
 
-> This is our simple school library. It hold info on teachers, students and what books they borrow. There are methods to add or remove such info. The class diagram for the object oriented programming school library is given below.
+> This is our simple school library. It hold info on teachers, students and what books they borrow. There are methods to add or remove such records. The class diagram for the object oriented programming school library is given below.
 
 
 ![](https://img.shields.io/badge/Microverse-blueviolet).
