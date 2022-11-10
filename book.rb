@@ -11,3 +11,6 @@ class Book
     Rental.new(date, person, self)
   end
 end
+
+# new_rental = Rental.new(date, person, self)
+# @rentals << new_rental
